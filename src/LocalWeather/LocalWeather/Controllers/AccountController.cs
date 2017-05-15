@@ -13,11 +13,11 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
-using LocalWeather.Models;
-using LocalWeather.Providers;
-using LocalWeather.Results;
+using OpenWeatherService.Models;
+using OpenWeatherService.Providers;
+using OpenWeatherService.Results;
 
-namespace LocalWeather.Controllers
+namespace OpenWeatherService.Controllers
 {
     [Authorize]
     [RoutePrefix("api/Account")]
@@ -39,14 +39,8 @@ namespace LocalWeather.Controllers
 
         public ApplicationUserManager UserManager
         {
-            get
-            {
-                return _userManager ?? Request.GetOwinContext().GetUserManager<ApplicationUserManager>();
-            }
-            private set
-            {
-                _userManager = value;
-            }
+            get => _userManager ?? Request.GetOwinContext().GetUserManager<ApplicationUserManager>();
+            private set => _userManager = value;
         }
 
         public ISecureDataFormat<AuthenticationTicket> AccessTokenFormat { get; private set; }

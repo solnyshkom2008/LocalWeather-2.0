@@ -1,4 +1,4 @@
-namespace LocalWeather.Areas.HelpPage
+namespace OpenWeatherService.Areas.HelpPage
 {
     /// <summary>
     /// Indicates whether the sample is used for request or response

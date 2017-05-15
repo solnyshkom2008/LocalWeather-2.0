@@ -1,7 +1,7 @@
 using System;
 using System.Reflection;
 
-namespace LocalWeather.Areas.HelpPage.ModelDescriptions
+namespace OpenWeatherService.Areas.HelpPage.ModelDescriptions
 {
     public interface IModelDocumentationProvider
     {

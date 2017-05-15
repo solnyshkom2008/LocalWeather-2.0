@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace LocalWeather.Models
+namespace OpenWeatherService.Models
 {
     // Models returned by AccountController actions.
 

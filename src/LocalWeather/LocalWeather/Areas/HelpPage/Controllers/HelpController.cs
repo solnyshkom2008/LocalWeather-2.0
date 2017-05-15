@@ -1,10 +1,10 @@
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using LocalWeather.Areas.HelpPage.ModelDescriptions;
-using LocalWeather.Areas.HelpPage.Models;
+using OpenWeatherService.Areas.HelpPage.ModelDescriptions;
+using OpenWeatherService.Areas.HelpPage.Models;
 
-namespace LocalWeather.Areas.HelpPage.Controllers
+namespace OpenWeatherService.Areas.HelpPage.Controllers
 {
     /// <summary>
     /// The controller that will handle requests for the help page.

@@ -1,6 +1,6 @@
 using System.Collections.ObjectModel;
 
-namespace LocalWeather.Areas.HelpPage.ModelDescriptions
+namespace OpenWeatherService.Areas.HelpPage.ModelDescriptions
 {
     public class ComplexTypeModelDescription : ModelDescription
     {

@@ -9,9 +9,9 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
-using LocalWeather.Models;
+using OpenWeatherService.Models;
 
-namespace LocalWeather.Providers
+namespace OpenWeatherService.Providers
 {
     public class ApplicationOAuthProvider : OAuthAuthorizationServerProvider
     {
