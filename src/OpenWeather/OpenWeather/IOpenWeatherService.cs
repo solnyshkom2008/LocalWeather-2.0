@@ -17,13 +17,8 @@ namespace OpenWeather
 
         [OperationContract]
         WeatherObject GetWeatherobject(WeatherParameter Param);
-
-        void SaveObject(WeatherObject wObject);
-
-        void GetWeatherWithSave(WeatherParameter Param);
     }
 
-    // Use a data contract as illustrated in the sample below to add composite types to service operations.
     [DataContract]
     public class CompositeType
     {
