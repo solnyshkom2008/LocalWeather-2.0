@@ -11,8 +11,6 @@ using System.Web.Script.Serialization;
 
 namespace OpenWeather
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in code, svc and config file together.
-    // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class OpenWeatherService : IOpenWeatherService
     {
         /// <param name="RequestType">Please Select from enum</param>
@@ -98,29 +96,11 @@ namespace OpenWeather
             return Content;
         }
 
-        /// <summary>
-        /// IF YOU GET WEATHER OBJECT PLEASE SET WEATHER PARAMETER FORMAT JSON
-        /// </summary>
-        /// <param name="Param"></param>
-        /// <returns></returns>
         public WeatherObject GetWeatherobject(WeatherParameter Param)
         {
             var jsonObject = GetWeather(Param);
             WeatherObject WObject = new JavaScriptSerializer().Deserialize<WeatherObject>(jsonObject);
             return WObject;
-        }
-
-        public void SaveObject(WeatherObject wObject)
-        {
-
-        }
-
-        public void GetWeatherWithSave(WeatherParameter Param)
-        {
-            var jsonObject = GetWeather(Param);
-            WeatherObject WObject = new JavaScriptSerializer().Deserialize<WeatherObject>(jsonObject);
-
-            SaveObject(WObject);
         }
     }
 }
